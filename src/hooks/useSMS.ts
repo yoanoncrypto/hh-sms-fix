@@ -51,7 +51,7 @@ export const useSMS = () => {
       }
 
       // Process recipients in batches to respect SMSAPI.bg limits
-      const batchSize = 100; // SMSAPI.bg limit for personalized messages
+      const batchSize = 250; // SMSAPI.bg limit for personalized messages
       const batches = [];
       
       for (let i = 0; i < validRecipients.length; i += batchSize) {
